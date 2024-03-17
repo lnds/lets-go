@@ -1,8 +1,45 @@
 # Instala Go en tu máquina
 
-Instalar Go en tu máquina es bastante sencillo. En el sitio oficial de Go: [https://go.dev/](https://go.dev/) hay iinstaladores, simplemente debes descargarlos y ejecutarlos.
+Instalar Go en tu máquina es bastante sencillo. En el sitio oficial de Go: [https://go.dev/](https://go.dev/) hay instaladores, simplemente debes descargarlos y ejecutarlos.
 
-Pero los profesionales usan un package manager. Acá te explico como instalar go en diversos sistemas operativos usando los package manager más populares:
+Pero hay una manera mucho más práctica, que es usando `asdf`. Esta herramienta nos permite gestionar múltiples versiones de los lenguajes operativos y es por eso que recomiendo usarla.
+
+Para instalar `asdf` necesitas tener instalado `git` y `curl`.
+Voy a explicar como instalar esto en ambientes tipo Unix (como Linux o Mac). Para Windows recomiendo usar el instalador, o instalar usando Chocolatey, tal como describo más adelante (pero pierdes la habilidad de usar múltiples versiones del lenguaje).
+
+## Soporte para múltiples versiones con ASDF
+
+Como los lenguajes evolucionan a veces es bueno poder usar ASDF, que es una herramienta que nos permite mantener diversas versiones con ambientes virtuales.
+
+Para instalar `asdf` debes ejecutar este comando:
+
+    git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.
+
+Luego asegurarte de que `asdf` esté accesible en el path. Si usas Bash agrega esta línen el archivo `.bashrc`:
+
+    . "$HOME/.asdf/asdf.sh"
+
+Si tienes Mac puedes ahorrarte todo la anterior usando brew:
+
+    brew install asdf
+
+Si tienes `asdf` instalado debes agregar el plugin para golang del siguiente modo:
+
+        asdf plugin add golang
+
+Luego puedes instalar la última versión de Go del siguiente modo:
+
+        asdf install golang latest  
+
+En los tutoriales que ejecutaremos usaremos Go 1.22.1, así que si quieres asegurarte de usar esa versión puedes hacer
+
+        asdf install golang 1.22.1
+
+Cuando quieras usar go, en el directorio de trabajo de tu proyecto debes hacer:
+
+        asdf local golang 1.22.1
+
+A continuación muestro otros modos de instalar Go en Windows y Mac.
 
 ## Instalando en Windows con Chocolatey
 
@@ -25,14 +62,6 @@ Debes tener instalado [brew](https://brew.sh/). Simplemente ejecutas:
 
 
 ![](brew-install.gif)
-
-## Instalando en Ubuntu 22
-
-Ubuntu es una de las distros más populares, en este caso podemos usar apt para instalara Go.
-
-        sudo apt update
-        sudo apt upgrade
-        sudo apt install golang-go
 
 
 [Volver al índice](../README.md)
