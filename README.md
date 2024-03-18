@@ -8,8 +8,9 @@ Debe considerarse un complemento a artículos escritos en la sección "El Progra
 
 En esta parte aprenderemos lo básico de go construyendo algunos programas.
 
-- [Instala Go en tu máquina](/parte-1/Instala.MD)
-- Hola Mundo
+- [Instala Go en tu máquina](/parte-1/Instala.md)
+- [Hola Mundo](/parte-1/HolaMundo.md)
+- [Hola Web](/parte-2/HolaWeb.md)
 - Múltiplos
 - FizzBuzz
 - Toque y Fama
