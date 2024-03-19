@@ -13,7 +13,7 @@ En esta parte aprenderemos lo básico de go construyendo algunos programas.
 - [Instala Go en tu máquina](/parte-1/Instala.md)
 - [Hola Mundo](/parte-1/HolaMundo.md): el clásico ejemplo.
 - [Hola Web](/parte-1/HolaWeb.md): versión más moderna de "hola mundo", creamos un servidor web para poder saludar.
-- [Múltiplos y FizzBuzz](/parte-1/Multiplos): como declarar variables, y las estructuras de control de flujo.
+- [Múltiplos y FizzBuzz](/parte-1/Multiplos.md): como declarar variables, y las estructuras de control de flujo.
 - [WordCount]: switch y diccionarios.
 - [Toque y Fama]: funciones y gestión de errores.
 - [Black Jack]: paquetes y organización del código.
