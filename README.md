@@ -1,7 +1,7 @@
 # Let's Go
 
 Este repositorio contiene algunos tutoriales sencillos para aprender el lenguaje Go.
-Debe considerarse un complemento a artículos escritos en la sección "El Programador Oxidado" del newsletter de La Naturaleza del Software.
+Debe considerarse un complemento a artículos escritos en la sección ["El Programador Oxidado"](https://newsletter.lnds.net/s/el-programador-oxidado) del newsletter de La Naturaleza del Software.
 
 
 ## Parte 1: Lo básico
