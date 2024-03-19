@@ -1,6 +1,8 @@
 # Hola Web
 
-Una característica de Go es que su biblioteca estándar es bastante rica en funcionalidades. Sobretodo en todo lo relacionado con la programación enfocada en redes. Con la versión 1.22 esto ha mejorado bastante, permitiéndonos crear un servidor web sin tener que descargar o instalar ningún framework o biblioteca especial. Veamos un ejemplo muy sencillo.
+Una característica de Go es que su biblioteca estándar es bastante rica en funcionalidades. Sobretodo con el soporte de redes. Con la versión 1.22 esto ha mejorado bastante, permitiéndonos crear un servidor web sin tener que descargar o instalar ningún framework o biblioteca especial. 
+
+Veamos como es esto con un ejemplo muy sencillo.
 
 Al igual que con el caso del programa [HolaMundo](/parte-1/HolaMundo.md), creamos un módulo que llamamos `holaweb`:
 
