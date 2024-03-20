@@ -143,3 +143,6 @@ Prueba esta solución ejecutando:
 
 
 2. Un problema con la solución presentada para múltiplos, es que es muy ineficiente. Si nos pidieran encontrar la suma para n igual a mil millones este programa va a tomar mucho tiempo iterando. ¿Se te ocurre un medio de implementar este algoritmo de un modo más eficiente?
+
+
+[Volver al índice](../README.md)

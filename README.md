@@ -1,10 +1,21 @@
 # Let's Go
 
-Este repositorio contiene algunos tutoriales y artículos introductorios al lenguaje Go.
+## Guía del Lenguaje Go para el Programador Oxidado
 
-Este es un complemento a artículos escritos en la sección ["El Programador Oxidado"](https://newsletter.lnds.net/s/el-programador-oxidado) del newsletter de La Naturaleza del Software.
+Este repositorio contiene algunos artículos introductorios al lenguaje Go.
 
 Se asume que el lector sabe programar y quiere aprender más sobre Go. También se recomienda conocer la sintáxis de lenguajes de la familia de C (como C,C++, C#, Java, Javascript y similares).
+
+Está pensado como una guía, no un curso como tal. Se trata de mostrar las características del lenguaje resolviendo algunos problemas específicos. 
+ 
+Cada problema es presentado en un artículo y el código que lo resuelve está contenido en su propia carpeta. El artículo explica algunas características del lenguaje usados para resolver el desafío, y resalta las partes del código relevante.
+
+Al final se incluye bibliografía recomendada para aprender el lenguaje en profundidad.
+
+El objetivo de esta guía es proveer material en español para este lenguaje. 
+
+Si te interesa este contenido puedes apoyarme suscribiéndote a mi newsletter [El Programador Oxidado/La Naturaleza del Software](https://newsletter.lnds.net/s/el-programador-oxidado).
+
 
 ## Parte 1: Lo básico
 
@@ -14,23 +25,37 @@ En esta parte aprenderemos lo básico de go construyendo algunos programas.
 - [Hola Mundo](/parte-1/HolaMundo.md): el clásico ejemplo.
 - [Hola Web](/parte-1/HolaWeb.md): versión más moderna de "hola mundo", creamos un servidor web para poder saludar.
 - [Múltiplos y FizzBuzz](/parte-1/Multiplos.md): como declarar variables, y las estructuras de control de flujo.
-- [WordCount]: switch y diccionarios.
-- [Toque y Fama]: funciones y gestión de errores.
-- [Black Jack]: paquetes y organización del código.
+- [Letras](/parte-1/Letras.md): switch y diccionarios.
+- [Go Tooling](/parte-1/Tooling.md): herramientas incluidas en Go.
 
-## Parte 2: Concurrencia
 
-TBD
-
-## Parte 3: Aplicaciones Web
+## Parte 2: Paquetes, módulos, estructuras e interfaces
 
 TBD
 
-## Parte 4: Tópicos Avanzados
+## Parte 3: Concurrencia
+
+TBD
+
+## Parte 4: Aplicaciones 
+
+TBD
+
+## Parte 5: Tópicos Avanzados
 
 TBD
 
 ## Referencias
 
-Libros y guías para aprender Go
+Libros y guías para aprender Go:
 
+- [The Go Programming Language](https://amzn.to/3Tzd802) por Brian Kernighan
+- [Learning Go: An Idiomatic Approach to Real-World Go Programming](https://amzn.to/3VsAc2R) por Jon Bodner
+- [Concurrency in Go: Tools and Techniques for Developers 1st Edition](https://amzn.to/3vn5LRe) por Katherine Cox-buday
+- [Effective Go](https://go.dev/doc/effective_go)
+- [Go en Exercism](https://exercism.org/tracks/go)
+
+
+## Copyright
+
+(c) 2024 Eduardo Díaz Cortés 
