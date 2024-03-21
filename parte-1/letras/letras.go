@@ -33,9 +33,9 @@ func main() {
 }
 
 func processFiles(files []string, vowels, consonants, digits bool) {
-
-	var letters = map[rune]int{}
 	var countVowels, countConsonants, countDigits int
+
+	letters := make(map[rune]int)
 
 	for _, file := range files {
 		buf, err := os.ReadFile(file)
@@ -45,7 +45,6 @@ func processFiles(files []string, vowels, consonants, digits bool) {
 		}
 		runes := string(buf)
 		for _, r := range runes {
-
 			if !unicode.IsLetter(r) && !unicode.IsDigit(r) {
 				continue
 			}
