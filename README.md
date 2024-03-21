@@ -1,6 +1,6 @@
 # Let's Go
 
-## Guía del Lenguaje Go para el Programador Oxidado
+## Guía del Lenguaje Go para Programadores Oxidados
 
 Este repositorio contiene algunos artículos introductorios al lenguaje Go.
 
