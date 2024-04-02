@@ -31,7 +31,10 @@ En esta parte aprenderemos lo básico de go construyendo algunos programas.
 
 ## Parte 2: Paquetes, módulos, estructuras e interfaces
 
-TBD
+Continuamos la exploración de Go aprendiendo cómo trabajar con todo tipo de datos.
+
+- [Lo público y lo privado](/parte-2/PublicoPrivado.md): revisamos como crear paquetes y como se implementa el encapsulamiento en Go.
+
 
 ## Parte 3: Concurrencia
 
