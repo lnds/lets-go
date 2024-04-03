@@ -34,6 +34,7 @@ En esta parte aprenderemos lo básico de go construyendo algunos programas.
 Continuamos la exploración de Go aprendiendo cómo trabajar con todo tipo de datos.
 
 - [Lo público y lo privado](/parte-2/PublicoPrivado.md): revisamos como crear paquetes y como se implementa el encapsulamiento en Go.
+- [Need For Speed](/parte-2/NeedForSpeed.md): vemos como trabajar con structs con una variación de un problema publicado en Exercism.
 
 
 ## Parte 3: Concurrencia
