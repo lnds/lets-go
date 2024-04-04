@@ -13,8 +13,8 @@ func main() {
 	ducks := []ducks.Duck{
 		ducks.NewBlackDuck("Daffy"),
 		ducks.NewBlackDuck("Donald"),
-		ducks.NewSwan(),
-		ducks.NewSwan(),
+		ducks.Swan(100),
+		ducks.Swan(42),
 	}
 	LakeSimulation(ducks)
 }

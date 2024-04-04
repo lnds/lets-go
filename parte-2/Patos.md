@@ -74,9 +74,9 @@ Y podemos probar esto del siguiente modo:
 
 ```go
 func main() {
-    ducks := []Duck{
-        NewBlackDuck("Daffy"),
-        NewBlackDuck("Donald"),
+    ducks := []ducks.Duck{
+        ducks.NewBlackDuck("Daffy"),
+        ducks.NewBlackDuck("Donald"),
     }
     LakeSimulation(ducks)
 }
@@ -90,49 +90,42 @@ Agregamos el archivo `swans.go` a nuestro package.
 
 
 ```go
-type Swan struct {
-    id int
+type Swan int 
+
+func (swan Swan) Fly() {
+    fmt.Println("Swan", swan, "is flying")
 }
 
-func (swan *Swan) Fly() {
-    fmt.Println("Swan", swan.id, "is flying")
-}
-
-func (swan *Swan) Swim() {
-    fmt.Println("Swan", swan.id, "is swimming")
+func (swan Swan) Swim() {
+    fmt.Println("Swan", swan, "is swimming")
 }
 
 ```
 
-El '"constructor' lo vamos a declarar así:
+Fíjate que el tipo `Swan` es simplemente un `int`. Ojo, ya no es un tipo entero, es un nuevo tipo que hereda todo el comportamiento de un `int`, pero que puede tener métodos, como `Fly()` y `Swan()`.
 
-```go
-func NewSwan() Duck {
-    return &Swan{
-        id: rand.IntN(1000)
-    }
-}
-```
-
-Nuestros cisnes son bastante anónimos, así que su identidad será un número aleatorio.
+Nuestros cisnes son bastante anónimos, así que su identidad será el valor numérico que se le de al declararlo.
 
 Ahora podemos modificar nuestra simulación agregando un par de cisnes:
 
 ```go
 func main() {
     ducks := []Duck{
-        NewBlackDuck("Daffy"),
-        NewBlackDuck("Donald"),
-        NewSwan(),
-        NewSwan(),
+        ducks.NewBlackDuck("Daffy"),
+        ducks.NewBlackDuck("Donald"),
+        ducks.Swan(100),
+        ducks.Swan(42),
     }
     LakeSimulation(ducks)
 }
 ```
 
+Esto es muy interesante, podemos asociar interfaces a cualquier tipo, basta con agregar los métodos que la componen en ese nuevo tipo.
 
-Nota que las funciones que crean las estructuras tienen como tipo de retorno `Duck`. Incluso la función `NewSwan` se ve extraña retornando el tipo `Swan`, pero esto se debe a que si queremos tener este grado de polimorfismo, nuestros "constructores" tienen que retornar una interfaz.
+## Ejercicios
 
-Otra cosa que se debe notar es que nuestras funciones constructoras retornan referencias a las estructuras. Te dejo como ejercicio averiguar que pasa si retornamos la estructura en vez de una referencia a la misma.
+1. Crea un nuevo package llamado `swans` y mueve el archivo `swans.go` a este. ¿Qué otras modificaciones debes hacer al código para que siga funcionando la simulación?
+2. Modifica la simulación para que el 25% del tiempo los patos naden y el 35% del tiempo vuelen.
+3. Agrega el tipo `Goose` que implemente el comportamiento de un Ganso. Una diferencia es que el ganso cada vez que emprende el vuelo grazna, implementa el método `Quack` que se encarga de graznar y sólo debe estar disponible en la struct `Goose`.
 
-Todo el ejercicio se encuentra en la carpeta [ducks](/parte-2/ducks)
+[Volver al índice](../README.md)

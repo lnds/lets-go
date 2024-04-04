@@ -188,3 +188,6 @@ Ahora tu turno.
 
 1. Agrega la función `ToKelvin`. ¿Qué problema presenta agregar esta función? ¿Cómo tendríamos que modificar las interfaces de nuestras funciones para adaptarla a esta nueva situación?
 2. Agrega otro paquete para transformar unidades de peso (libras, kilos, onzas, etcétera). Llámalo `weights` y crea las respectivas funciones.
+
+
+[Volver al índice](../README.md)
