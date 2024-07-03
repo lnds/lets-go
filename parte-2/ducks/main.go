@@ -7,7 +7,7 @@ func LakeSimulation(ducks []ducks.Duck) {
 		duck.Fly()
 		duck.Swim()
 	}
-}
+
 
 func main() {
 	ducks := []ducks.Duck{

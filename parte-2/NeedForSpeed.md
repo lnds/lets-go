@@ -3,7 +3,7 @@
 Vamos a aprender a usar structs en Go resolviendo dos ejercicios de la plataforma [Exercism](https://exercism.org/).
 
 
-## Resolviend "Need For Speed"
+## Resolviendo "Need For Speed"
 
 El primer ejercicio se llama "Need For Speed" y lo encuentras en esta dirección: https://exercism.org/tracks/go/exercises/need-for-speed. Te sugiero que lo leas, porque además tiene una introducción al concepto de estructuras en Go.
 
