@@ -41,8 +41,8 @@ Continuamos la exploración de Go aprendiendo cómo trabajar con todo tipo de da
 
 En esta parte vamos a revisar el modelo de Concurrencia propuesto por Go, basado en canales y go routines.
 
-- [Reloj no marques las horas](/part-3/Reloj.md): introduciremos las go rutinas (go routines) creand un servidor tcp/ip que nos reporte la hora.
-- [Fibonacci Square](/parte-3/Fibonacci.md): vamos a introducir el concepto de canales implementando un patrón para simular generadores en Go.
+- [Reloj no marques las horas](/parte-3/Reloj.md): introduciremos las go rutinas (go routines) creand un servidor tcp/ip que nos reporte la hora.
+- [Fibonacci Square]: vamos a introducir el concepto de canales implementando un patrón para simular generadores en Go.
 
 ## Parte 4: Aplicaciones 
 
