@@ -167,11 +167,11 @@ Implementemos nuestra función `main()` modificándola un poco para que use esto
 ```go
 func main() {
     naturals := make(chan int)
-	squares := make(chan int)
+    squares := make(chan int)
     fibos := make(chan int)
     diffs := make(chan int)
-	go Counter(100, naturals)
-	go Squarer(naturals, squares)
+    go Counter(100, naturals)
+    go Squarer(naturals, squares)
     go Fibonacci(fibos)
     go Diff(squares, fibos, diffs)
 	Printer(diffs)
